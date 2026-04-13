@@ -2,18 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
     <title>Dhyey Desai | Portfolio</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand-link" href="#home">DD</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#projects">Projects</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home" class="hero-section">
+          <div class="hero-copy">
+            <span class="eyebrow role-rotate">Software Developer</span>
+            <h1>Building software that is simple, strong, and clear.</h1>
+            <p>
+              I focus on backend systems, cloud services, and mobile apps that work well,
+              look clean, and stay easy to use.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View projects</a>
+              <a class="button button-secondary" href="#contact">Let’s connect</a>
+            </div>
+          </div>
+          <div class="hero-mesh" aria-hidden="true"></div>
+        </section>
+
+        <section id="about" class="section-block about-block">
+          <div class="section-head">
+            <span class="eyebrow">About</span>
+            <h2>Software with structure, clarity, and calm impact.</h2>
+          </div>
+          <div class="about-grid">
+            <div>
+              <p>
+                I build systems that feel dependable and easy to use. My work blends backend
+                reliability, cloud stability, and mobile accessibility.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section-block projects-block">
+          <div class="section-head">
+            <span class="eyebrow">Projects</span>
+            <h2>Selected work with real-world clarity.</h2>
+          </div>
+          <div class="projects-grid"></div>
+        </section>
+
+        <section id="timeline" class="section-block timeline-block">
+          <div class="section-head">
+            <span class="eyebrow">Timeline</span>
+            <h2>Key milestones from graduation to AI learning.</h2>
+          </div>
+          <div class="timeline-list"></div>
+        </section>
+
+        <section id="experience" class="section-block experience-block">
+          <div class="section-head">
+            <span class="eyebrow">Experience</span>
+            <h2>Practical roles that shaped how I ship software.</h2>
+          </div>
+          <div class="experience-grid"></div>
+        </section>
+
+        <section class="section-block skills-block">
+          <div class="section-head">
+            <span class="eyebrow">Skills</span>
+            <h2>Capabilities and toolsets I rely on.</h2>
+          </div>
+          <div class="skills-grid"></div>
+        </section>
+
+        <section class="section-block ai-block">
+          <div class="section-head">
+            <span class="eyebrow">AI Learning</span>
+            <h2>Claude Code in action</h2>
+          </div>
+          <div class="highlight-panel">
+            <div>
+              <p>
+                Completed Anthropic’s Claude Code certification, translating AI concepts into working code.
+                The focus is on practical prompt workflows, automation, and making machine-assisted systems feel
+                structured rather than noisy.
+              </p>
+            </div>
+            <div class="highlight-badge">
+              <span>Certificate</span>
+              <strong>Claude Code in Action</strong>
+              <small>Anthropic • 2026</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block certification-block">
+          <div class="section-head">
+            <span class="eyebrow">Certificates</span>
+            <h2>Official credentials and cloud skills.</h2>
+          </div>
+          <div class="cert-grid"></div>
+        </section>
+      </main>
+
+      <footer id="contact" class="footer-block">
+        <div class="footer-inner">
+          <div>
+            <span class="eyebrow">Contact</span>
+            <h2>Let’s create the next clean system together.</h2>
+            <p>
+              Reach out for project work, collaboration, or to discuss AI-enabled products and cloud-first engineering.
+            </p>
+          </div>
+          <div class="footer-actions">
+            <a class="button button-primary" href="mailto:dhyeydesai2103@gmail.com">Email me</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/dhyeydesaii/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-copy">
+          <p>© <span id="footer-year"></span> Dhyey Desai</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

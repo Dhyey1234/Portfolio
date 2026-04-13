@@ -1,4 +1,5 @@
-/* Portfolio visual system */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
 :root {
   color-scheme: dark;
   --bg: #071c33;
@@ -18,8 +19,7 @@
 }
 
 body,
-html,
-#root {
+html {
   margin: 0;
   min-height: 100%;
 }
@@ -138,7 +138,6 @@ select {
     opacity: 0;
     transform: translateY(-6px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -210,10 +209,6 @@ select {
   padding-bottom: 1.5rem;
 }
 
-.projects-block {
-  padding-top: 1rem;
-}
-
 .section-head {
   max-width: 760px;
   margin-bottom: 1rem;
@@ -282,12 +277,7 @@ select {
   border-radius: var(--radius);
 }
 
-.about-stat-panel {
-  display: grid;
-  gap: 1rem;
-  padding: 1.5rem;
-}
-
+.about-stat-panel,
 .project-card,
 .experience-card,
 .cert-card,

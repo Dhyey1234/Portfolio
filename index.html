@@ -7,138 +7,263 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <title>Dhyey Desai | Portfolio</title>
   </head>
   <body>
+    <div class="site-noise" aria-hidden="true"></div>
+    <div class="site-grid" aria-hidden="true"></div>
+
     <div class="app-shell">
       <header class="topbar">
-        <a class="brand-link" href="#home">DD</a>
-        <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#projects">Projects</a>
-          <a href="#timeline">Timeline</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div class="section-shell topbar-inner">
+          <a class="brand-link" href="#home">
+            <span>DD</span>
+            <small>Portfolio</small>
+          </a>
+
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#skills">Skills</a>
+            <a href="#vault">Credentials</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <a class="nav-cta" href="dhyeydesai.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </div>
       </header>
 
       <main>
         <section id="home" class="hero-section">
-          <div class="hero-copy">
-            <span class="eyebrow role-rotate">Software Developer</span>
-            <h1>Building software that is simple, strong, and clear.</h1>
-            <p>
-              I focus on backend systems, cloud services, and mobile apps that work well,
-              look clean, and stay easy to use.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#projects">View projects</a>
-              <a class="button button-secondary" href="#contact">Let’s connect</a>
+          <div class="section-shell hero-layout">
+            <div class="hero-copy">
+              <span class="eyebrow hero-role">Software Developer</span>
+
+              <h1 class="hero-title">
+                <span class="title-line">Web, mobile, and cloud</span>
+                <span class="title-line accent-line">systems built with clarity.</span>
+              </h1>
+
+              <p class="hero-lead">
+                Computer Science graduate with experience building web and mobile applications
+                using Java, JavaScript, and cloud platforms, with hands-on exposure to Azure and
+                AWS.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-primary" href="#projects">View projects</a>
+                <a class="button button-secondary" href="#contact">Get in touch</a>
+              </div>
+
+              <div class="hero-stats">
+                <article class="stat-card tilt-card">
+                  <strong>03</strong>
+                  <span>Resume-backed case studies</span>
+                </article>
+                <article class="stat-card tilt-card">
+                  <strong>02</strong>
+                  <span>Professional roles</span>
+                </article>
+                <article class="stat-card tilt-card">
+                  <strong>03</strong>
+                  <span>Credentials and certifications</span>
+                </article>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <div class="hero-panel tilt-card" data-parallax="8">
+                <div class="hero-panel-media">
+                  <img src="media/DhyeyGraduation.jpeg" alt="Portrait of Dhyey Desai" />
+                  <span class="hero-panel-badge">Resume backed</span>
+                </div>
+
+                <div class="hero-panel-body">
+                  <span class="eyebrow">Profile</span>
+                  <h2>Backend, cloud, and mobile experience with a delivery-first mindset.</h2>
+                  <ul class="hero-list">
+                    <li>RESTful APIs, backend workflows, and debugging in Agile environments</li>
+                    <li>Hands-on Azure administration, Docker deployments, and AWS fundamentals</li>
+                    <li>Web and mobile application work across Java, JavaScript, and Node.js stacks</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+              <div class="hero-orbit orbit-two" aria-hidden="true"></div>
             </div>
           </div>
-          <div class="hero-mesh" aria-hidden="true"></div>
         </section>
 
         <section id="about" class="section-block about-block">
-          <div class="section-head">
-            <span class="eyebrow">About</span>
-            <h2>Software with structure, clarity, and calm impact.</h2>
-          </div>
-          <div class="about-grid">
-            <div>
+          <div class="section-shell intro-layout">
+            <div class="section-head reveal-up">
+              <span class="eyebrow">About</span>
+              <h2>Technical depth shaped by backend delivery, cloud labs, and practical support work.</h2>
+            </div>
+
+            <div class="about-copy reveal-up">
               <p>
-                I build systems that feel dependable and easy to use. My work blends backend
-                reliability, cloud stability, and mobile accessibility.
+                My background combines computer applications education, web development training,
+                backend internship experience, and day-to-day operational leadership. I focus on
+                building reliable systems, documenting clearly, and solving issues methodically.
               </p>
+
+              <div class="about-panels">
+                <article class="insight-card tilt-card">
+                  <span class="insight-label">Focus</span>
+                  <h3>Backend and APIs</h3>
+                  <p>RESTful APIs, database work, backend documentation, and maintainable workflows.</p>
+                </article>
+
+                <article class="insight-card tilt-card">
+                  <span class="insight-label">Strength</span>
+                  <h3>Cloud and testing</h3>
+                  <p>Azure labs, Docker deployment work, and hands-on testing and troubleshooting.</p>
+                </article>
+              </div>
             </div>
           </div>
         </section>
 
         <section id="projects" class="section-block projects-block">
-          <div class="section-head">
-            <span class="eyebrow">Projects</span>
-            <h2>Selected work with real-world clarity.</h2>
-          </div>
-          <div class="projects-grid"></div>
-        </section>
-
-        <section id="timeline" class="section-block timeline-block">
-          <div class="section-head">
-            <span class="eyebrow">Timeline</span>
-            <h2>Key milestones from graduation to AI learning.</h2>
-          </div>
-          <div class="timeline-list"></div>
-        </section>
-
-        <section id="experience" class="section-block experience-block">
-          <div class="section-head">
-            <span class="eyebrow">Experience</span>
-            <h2>Practical roles that shaped how I ship software.</h2>
-          </div>
-          <div class="experience-grid"></div>
-        </section>
-
-        <section class="section-block skills-block">
-          <div class="section-head">
-            <span class="eyebrow">Skills</span>
-            <h2>Capabilities and toolsets I rely on.</h2>
-          </div>
-          <div class="skills-grid"></div>
-        </section>
-
-        <section class="section-block ai-block">
-          <div class="section-head">
-            <span class="eyebrow">AI Learning</span>
-            <h2>Claude Code in action</h2>
-          </div>
-          <div class="highlight-panel">
-            <div>
+          <div class="section-shell">
+            <div class="section-head section-head-wide reveal-up">
+              <span class="eyebrow">Projects</span>
+              <h2>Selected work drawn directly from the resume and certification track.</h2>
               <p>
-                Completed Anthropic’s Claude Code certification, translating AI concepts into working code.
-                The focus is on practical prompt workflows, automation, and making machine-assisted systems feel
-                structured rather than noisy.
+                These highlights cover full-stack delivery, logistics workflows, and hands-on cloud
+                administration experience.
               </p>
             </div>
-            <div class="highlight-badge">
-              <span>Certificate</span>
-              <strong>Claude Code in Action</strong>
-              <small>Anthropic • 2026</small>
+
+            <div class="projects-grid"></div>
+          </div>
+        </section>
+
+        <section id="timeline" class="section-block story-block">
+          <div class="section-shell story-bento">
+            <article class="story-intro tilt-card reveal-up">
+              <span class="eyebrow">Timeline</span>
+              <h2>Education, work, and project milestones shaped into a tighter delivery story.</h2>
+              <p>
+                The portfolio flow now groups formal study, hands-on roles, and shipped projects
+                into a cleaner bento layout instead of a long split column.
+              </p>
+
+              <div class="story-intro-metrics">
+                <div>
+                  <strong>2021</strong>
+                  <span>Started formal software study</span>
+                </div>
+                <div>
+                  <strong>2026</strong>
+                  <span>Focused on backend, Android, and cloud delivery</span>
+                </div>
+              </div>
+            </article>
+
+            <section class="story-panel story-education-panel reveal-up">
+              <div class="story-panel-head">
+                <span class="eyebrow">Education</span>
+                <h3>Formal study</h3>
+              </div>
+
+              <div class="education-grid"></div>
+            </section>
+
+            <section class="story-panel story-timeline-panel">
+              <div class="story-panel-head reveal-up">
+                <span class="eyebrow">Path</span>
+                <h3>Milestone flow</h3>
+              </div>
+
+              <div class="timeline-list"></div>
+            </section>
+
+            <section id="experience" class="story-panel story-experience-panel">
+              <div class="story-panel-head reveal-up">
+                <span class="eyebrow">Experience</span>
+                <h3>Professional work</h3>
+              </div>
+
+              <div class="experience-grid"></div>
+            </section>
+          </div>
+        </section>
+
+        <section id="skills" class="section-block skills-block">
+          <div class="section-shell skills-layout">
+            <div class="skills-main">
+              <div class="section-head reveal-up">
+                <span class="eyebrow">Skills</span>
+                <h2>Resume-aligned stack across development, cloud, databases, testing, and tools.</h2>
+              </div>
+
+              <div class="skills-grid"></div>
+
+              <div class="tech-wall reveal-up">
+                <div class="tech-wall-head">
+                  <span class="eyebrow">Tech Logos</span>
+                  <p>Relevant technology logos sourced from svgl.app.</p>
+                </div>
+
+                <div class="tech-logo-grid"></div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="section-block certification-block">
-          <div class="section-head">
-            <span class="eyebrow">Certificates</span>
-            <h2>Official credentials and cloud skills.</h2>
+        <section id="vault" class="section-block certification-block">
+          <div class="section-shell">
+            <div class="section-head reveal-up">
+              <span class="eyebrow">Credentials</span>
+              <h2>Certifications and preparation work that reinforce cloud, ops, and AI capability.</h2>
+            </div>
+
+            <div class="cert-grid"></div>
           </div>
-          <div class="cert-grid"></div>
         </section>
       </main>
 
       <footer id="contact" class="footer-block">
-        <div class="footer-inner">
-          <div>
+        <div class="section-shell footer-shell">
+          <div class="footer-copy-block reveal-up">
             <span class="eyebrow">Contact</span>
-            <h2>Let’s create the next clean system together.</h2>
+            <h2>Available for software roles and project collaborations.</h2>
             <p>
-              Reach out for project work, collaboration, or to discuss AI-enabled products and cloud-first engineering.
+              Reach out to discuss backend development, cloud-oriented work, full-stack delivery,
+              or mobile application projects.
             </p>
           </div>
-          <div class="footer-actions">
+
+          <div class="footer-actions reveal-up">
             <a class="button button-primary" href="mailto:dhyeydesai2103@gmail.com">Email me</a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/dhyeydesaii/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button button-secondary" href="tel:+15198016816">Call me</a>
+            <a
+              class="button button-secondary"
+              href="https://www.linkedin.com/in/dhyeydesaii/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
           </div>
         </div>
-        <div class="footer-copy">
-          <p>© <span id="footer-year"></span> Dhyey Desai</p>
+
+        <div class="section-shell footer-meta">
+          <p>Copyright <span id="footer-year"></span> Dhyey Desai</p>
         </div>
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

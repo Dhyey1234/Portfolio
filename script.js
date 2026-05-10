@@ -88,6 +88,32 @@ const projects = [
       },
     ],
   },
+  {
+    category: 'Cloud Weather App',
+    name: 'Weather Notifier',
+    year: '2025',
+    description:
+      'Full-stack web application for real-time weather lookup and email notifications, powered by Azure.',
+    highlights: [
+      'Built a full-stack weather app with a Node.js backend and vanilla JS frontend.',
+      'Integrated OpenWeatherMap API for live weather data retrieval.',
+      'Deployed backend services using Microsoft Azure.',
+      'Implemented email notification workflows for weather alerts.',
+    ],
+    stack: ['JavaScript', 'Node.js', 'HTML', 'CSS', 'Microsoft Azure', 'REST APIs'],
+    logoNames: ['JavaScript', 'Node.js', 'Microsoft Azure'],
+    image: 'media/weatherApp.png',
+    links: [
+      {
+        label: 'Live Demo',
+        href: 'https://knowweather-ten.vercel.app',
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/Dhyey1234/weather-notifier-azure',
+      },
+    ],
+  },
 ];
 
 const experience = [

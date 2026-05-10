@@ -353,12 +353,11 @@ function renderProjects() {
   if (!container) return;
 
   container.innerHTML = projects
-    .map((project, index) => {
-      const layoutClass = index === 0 ? ' is-featured' : index === projects.length - 1 ? ' is-wide' : '';
+    .map((project) => {
       const linksMarkup = renderProjectLinks(project);
 
       return `
-        <article class="project-card tilt-card${layoutClass}">
+        <article class="project-card tilt-card">`
           <div class="project-media">
             ${renderProjectMedia(project)}
           </div>

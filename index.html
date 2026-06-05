@@ -3,369 +3,389 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dhyey Desai — Full Stack Developer & Cloud Explorer. Building reliable systems with Java, React, Node.js, and Azure." />
-  <title>Dhyey Desai</title>
+  <meta name="description" content="Dhyey Desai — Full Stack Developer, Software Developer &amp; Cloud Enthusiast" />
+  <title>Dhyey Desai — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Loading Screen -->
-  <div id="loading-screen" class="loading-screen">
-    <div class="loading-badge">
-      <div class="loading-badge-ring"></div>
-      <div class="loading-badge-inner"><span>99</span></div>
-    </div>
-    <p id="loading-msg" class="loading-msg"></p>
-    <div class="loading-track"><div id="loading-fill" class="loading-fill"></div></div>
-  </div>
+  <!-- Background grid -->
+  <div class="grid-overlay" aria-hidden="true"></div>
 
-  <!-- Background overlays -->
-  <div class="site-noise" aria-hidden="true"></div>
-  <div class="site-grid" aria-hidden="true"></div>
-
-  <!-- Navigation -->
-  <header id="navbar" class="navbar">
-    <div class="nav-inner">
-      <a href="#home" class="nav-brand" aria-label="Home">
-        <div class="nav-badge-icon"><span>99</span></div>
-        <div class="nav-brand-copy">
-          <strong>Dhyey Desai</strong>
-          <small class="mono">PRECINCT 99 // FULL STACK DEV</small>
-        </div>
-      </a>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#about" class="nav-link">Profile</a>
-        <a href="#skills" class="nav-link">Evidence</a>
-        <a href="#projects" class="nav-link">Cases</a>
-        <a href="#experience" class="nav-link">Field Ops</a>
-        <a href="#credentials" class="nav-link">Vault</a>
-        <a href="#contact" class="nav-link">Dispatch</a>
-      </nav>
-
-      <div class="nav-right">
-        <div class="nav-status" aria-hidden="true">
-          <span class="status-dot"></span>
-          <span class="mono">CASE ACTIVE</span>
-        </div>
-        <a href="dhyeydesai.pdf" target="_blank" rel="noreferrer" class="btn btn-gold nav-resume">Classified Doc</a>
-      </div>
-
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <a href="#home" class="nav-logo">
+      <!-- <span class="nav-logo-bracket">[</span><span class="nav-logo-text">DD</span><span class="nav-logo-bracket">]</span> -->
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home"           class="nav-link active">Home</a></li>
+      <li><a href="#projects"       class="nav-link">Projects</a></li>
+      <li><a href="#skills"         class="nav-link">Skills</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact"        class="nav-link">Contact</a></li>
+    </ul>
+    <a href="media/dhyeydesai.pdf" target="_blank" rel="noopener" class="nav-resume">
+      Resume <span aria-hidden="true">&#8599;</span>
+    </a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
   <!-- Mobile Menu -->
-  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
-    <nav>
-      <a href="#about" class="mobile-link">// Detective Profile</a>
-      <a href="#skills" class="mobile-link">// Evidence Locker</a>
-      <a href="#projects" class="mobile-link">// Case Files</a>
-      <a href="#experience" class="mobile-link">// Field Operations</a>
-      <a href="#credentials" class="mobile-link">// Credentials Vault</a>
-      <a href="#contact" class="mobile-link">// Dispatch Center</a>
-    </nav>
-    <a href="dhyeydesai.pdf" target="_blank" rel="noreferrer" class="btn btn-gold mobile-resume">Download Dossier</a>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul>
+      <li><a href="#home"           class="mobile-nav-link">Home</a></li>
+      <li><a href="#projects"       class="mobile-nav-link">Projects</a></li>
+      <li><a href="#skills"         class="mobile-nav-link">Skills</a></li>
+      <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+      <li><a href="#contact"        class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <a href="media/dhyeydesai.pdf" target="_blank" rel="noopener" class="mobile-resume">Resume &#8599;</a>
   </div>
 
-  <main>
-    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ HERO ━━ -->
-    <section id="home" class="hero">
-      <div class="hero-video-wrap">
-        <div class="hero-noir-bg" aria-hidden="true"></div>
-        <div class="hero-overlay"></div>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+
+      <div class="hero-tag reveal-up">
+        <span class="mono text-accent">~/dhyey-desai</span>
+        <span class="cursor-blink" aria-hidden="true">&#9607;</span>
       </div>
 
-      <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+      <h1 class="hero-name reveal-up" style="--delay:120ms">Dhyey Desai</h1>
 
-      <div class="hero-tape-top" aria-hidden="true">
-        <span class="mono">CAUTION · PRECINCT 99 · CAUTION · PRECINCT 99 · CAUTION · PRECINCT 99 · CAUTION ·</span>
+      <div class="hero-role reveal-up" style="--delay:220ms" aria-live="polite">
+        <span class="role-prefix mono" aria-hidden="true">$ role =&nbsp;</span>
+        <span class="role-text" id="roleText">Full Stack Developer</span>
       </div>
 
-      <div class="hero-container">
-        <div class="hero-copy">
-          <div class="hero-eyebrow">
-            <span class="pulse-dot" aria-hidden="true"></span>
-            <span class="mono label-xs gold">PRECINCT 99 // CASE ACTIVE // KITCHENER, ON</span>
-          </div>
+      <p class="hero-desc reveal-up" style="--delay:320ms">
+        Computer Science student with hands-on experience building full-stack applications, REST APIs, cloud-integrated solutions, and modern web platforms. Experienced with Java, Spring Boot, React, mobile development, databases, and cloud technologies. Passionate about creating scalable software solutions and continuously learning new technologies.
+      </p>
 
-          <p class="hero-sup mono">DETECTIVE</p>
-          <h1 class="hero-title">
-            Dhyey<br>
-            <span class="hero-title-accent">Desai</span>
-          </h1>
+     <div class="hero-education reveal-up" style="--delay:420ms">
+  
+  <div class="edu-item">
+    <span class="edu-icon mono text-accent" aria-hidden="true">&#9656;</span>
+    <div>
+      <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+      <div class="edu-school mono">Uka Tarsadia University &#8212; 2021–2024</div>
+    </div>
+  </div>
 
-          <div class="hero-typewriter">
-            <span class="mono gold">// </span><span id="typewriter" class="typewriter-text"></span><span class="cursor" aria-hidden="true">|</span>
-          </div>
+  <div class="edu-item">
+    <span class="edu-icon mono text-accent" aria-hidden="true">&#9656;</span>
+    <div>
+      <div class="edu-degree">Web Development Diploma</div>
+      <div class="edu-school mono">Conestoga College &#8212; 2024–2025</div>
+    </div>
+  </div>
 
-          <div class="hero-stats-row">
-            <div class="hero-stat"><strong>05</strong><span>Cases Filed</span></div>
-            <div class="hero-stat-sep" aria-hidden="true"></div>
-            <div class="hero-stat"><strong>03</strong><span>Certifications</span></div>
-            <div class="hero-stat-sep" aria-hidden="true"></div>
-            <div class="hero-stat"><strong>02</strong><span>Field Roles</span></div>
-          </div>
+</div>
 
-          <div class="hero-ctas">
-            <a href="#projects" class="btn btn-gold">
-              Open Case Files
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="dhyeydesai.pdf" target="_blank" rel="noreferrer" class="btn btn-outline">Download Dossier</a>
-            <a href="#contact" class="btn btn-ghost">Start Investigation</a>
-          </div>
+      <div class="hero-cta reveal-up" style="--delay:520ms">
+        <a href="https://github.com/dhyey1234" target="_blank" rel="noopener" class="btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.138 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/dhyeydesaii" target="_blank" rel="noopener" class="btn-outline">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="media/dhyeydesai.pdf" target="_blank" rel="noopener" class="btn-ghost">Resume &#8595;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS BENTO -->
+  <section class="section" id="projects">
+    <div class="section-header reveal-up">
+      <div class="section-label mono">// 01 &#8212; projects</div>
+      <h2 class="section-title">Selected <span class="text-accent">Work</span></h2>
+      <p class="section-sub">Production-ready applications engineered with a focus on scalability and clean architecture.</p>
+    </div>
+    <div class="bento-grid">
+
+      <!-- Row 1 Left: Employee Management — landscape -->
+      <article class="bento-card bento-landscape reveal-up">
+        <div class="bento-img-wrap">
+          <img src="media/Employeemangementsystem.png" alt="Employee Management System screenshot" loading="lazy" />
+          <div class="bento-img-overlay" aria-hidden="true"></div>
         </div>
-
-        <div class="hero-card" id="hero-card">
-          <div class="hero-card-photo">
-            <img src="media/DhyeyGraduation.jpeg" alt="Dhyey Desai" loading="eager" />
-            <div class="hero-card-scan" aria-hidden="true"></div>
+        <div class="bento-content">
+          <div class="bento-header">
+            <span class="bento-tag mono">Backend</span>
+            <span class="bento-badge">Completed</span>
           </div>
-          <div class="hero-card-data">
-            <div class="data-row">
-              <span class="mono label-xs text-dim">OPERATIVE ID</span>
-              <span class="mono label-xs gold">DD-2026-099</span>
+          <h3 class="bento-title">Employee Management System</h3>
+          <p class="bento-desc">REST API for employee records, departments, and payroll with role-based access control and audit logging.</p>
+          <div class="bento-footer">
+            <div class="bento-techs">
+              <span class="mono">Java</span><span class="mono">Spring Boot</span><span class="mono">PostgreSQL</span>
             </div>
-            <div class="data-divider"></div>
-            <div class="data-row">
-              <span class="mono label-xs text-dim">CLEARANCE</span>
-              <span class="mono label-xs gold">FULL STACK</span>
-            </div>
-            <div class="data-divider"></div>
-            <div class="data-row">
-              <span class="mono label-xs text-dim">STATUS</span>
-              <span class="mono label-xs" style="color:#4ade80;">● ACTIVE</span>
-            </div>
-            <div class="data-divider"></div>
-            <div class="data-row">
-              <span class="mono label-xs text-dim">LOCATION</span>
-              <span class="mono label-xs">Kitchener, ON</span>
-            </div>
-          </div>
-          <div class="classified-stamp" aria-hidden="true">CLASSIFIED</div>
-        </div>
-      </div>
-
-      <div class="scroll-hint" aria-hidden="true">
-        <div class="scroll-line"></div>
-        <span class="mono label-xs">SCROLL</span>
-      </div>
-    </section>
-
-    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ABOUT ━━ -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-badge mono">01 // PERSONNEL FILE</span>
-          <h2 class="section-title">Detective <span class="gold">Profile</span></h2>
-          <p class="section-desc">Classified operative dossier — access granted.</p>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-details reveal">
-            <div class="about-block">
-              <h3 class="mono gold about-block-title">// Background</h3>
-              <p>Computer Science graduate turned full-stack operator. Bachelor of Computer Applications from Uka Tarsadia University (2021–2024), followed by a Web Development diploma at Conestoga College (2024–2025). Deployed as a Backend Developer at Sarvadhi Solutions before pivoting to client-facing leadership at Farm Boy.</p>
-            </div>
-
-            <div class="about-block">
-              <h3 class="mono gold about-block-title">// Specializations</h3>
-              <div class="about-tags">
-                <span class="about-tag">Java / Spring Boot</span>
-                <span class="about-tag">React.js</span>
-                <span class="about-tag">Node.js</span>
-                <span class="about-tag">Microsoft Azure</span>
-                <span class="about-tag">AI-Assisted Systems</span>
-                <span class="about-tag">RESTful APIs</span>
-                <span class="about-tag">Android Dev</span>
-                <span class="about-tag">Cloud Architecture</span>
-              </div>
-            </div>
-
-            <div class="about-block">
-              <h3 class="mono gold about-block-title">// Off-Duty Intel</h3>
-              <div class="interests-grid">
-                <div class="interest"><span class="interest-icon">🏏</span><span>Cricket</span></div>
-                <div class="interest"><span class="interest-icon">🏐</span><span>Volleyball</span></div>
-                <div class="interest"><span class="interest-icon">🏍</span><span>Bike Rides</span></div>
-                <div class="interest"><span class="interest-icon">🌶</span><span>Spicy Food</span></div>
-              </div>
-            </div>
-
-            <div class="about-footer-note">
-              <span class="mono text-dim label-xs" title="Cool. Cool cool cool.">// Cool cool cool...</span>
+            <div class="bento-actions">
+              <a href="https://github.com/dhyey1234" target="_blank" rel="noopener" class="bento-btn-ghost">GitHub</a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </article>
 
-    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SKILLS ━━ -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-badge mono">02 // EVIDENCE LOCKER</span>
-          <h2 class="section-title">Evidence <span class="gold">Locker</span></h2>
-          <p class="section-desc">All tools and investigative equipment on record — tagged and catalogued.</p>
+      <!-- Row 1 Right: Body & Care Works — portrait -->
+      <article class="bento-card bento-portrait reveal-up" style="--delay:80ms">
+        <div class="bento-img-wrap">
+          <img src="media/bodycare2.jpeg" alt="Body and Care Works website screenshot" loading="lazy" />
+          <div class="bento-img-overlay" aria-hidden="true"></div>
         </div>
-
-        <div class="filter-bar" role="tablist" aria-label="Evidence categories">
-          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">ALL</button>
-          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">FRONTEND</button>
-          <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">BACKEND</button>
-          <button class="filter-btn" data-filter="cloud" role="tab" aria-selected="false">CLOUD</button>
-          <button class="filter-btn" data-filter="database" role="tab" aria-selected="false">DATABASE</button>
-          <button class="filter-btn" data-filter="tools" role="tab" aria-selected="false">TOOLS</button>
-        </div>
-
-        <div class="skills-grid" id="skills-grid"></div>
-      </div>
-    </section>
-
-    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ PROJECTS ━━ -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-badge mono">03 // CASE FILES</span>
-          <h2 class="section-title">Case <span class="gold">Files</span></h2>
-          <p class="section-desc">Active investigations and closed cases — all filed and on record.</p>
-        </div>
-
-        <div class="filter-bar" role="tablist" aria-label="Case categories">
-          <button class="filter-btn active" data-pfilter="all" role="tab" aria-selected="true">ALL CASES</button>
-          <button class="filter-btn" data-pfilter="web" role="tab" aria-selected="false">WEB</button>
-          <button class="filter-btn" data-pfilter="mobile" role="tab" aria-selected="false">MOBILE</button>
-          <button class="filter-btn" data-pfilter="cloud" role="tab" aria-selected="false">CLOUD</button>
-          <button class="filter-btn" data-pfilter="ai" role="tab" aria-selected="false">AI</button>
-        </div>
-
-        <div class="projects-grid" id="projects-grid"></div>
-      </div>
-    </section>
-
-    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ EXPERIENCE ━━ -->
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-badge mono">04 // FIELD OPERATIONS</span>
-          <h2 class="section-title">Field <span class="gold">Operations</span></h2>
-          <p class="section-desc">Incident logs and deployment records from active field assignments.</p>
-        </div>
-        <div class="timeline" id="timeline"></div>
-      </div>
-    </section>
-
-    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ CREDENTIALS ━━ -->
-    <section id="credentials" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-badge mono">05 // CREDENTIALS VAULT</span>
-          <h2 class="section-title">Credentials <span class="gold">Vault</span></h2>
-          <p class="section-desc">Certified evidence of expertise — authenticated, stamped, and on record.</p>
-        </div>
-        <div class="creds-grid" id="creds-grid"></div>
-      </div>
-    </section>
-
-    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ CONTACT ━━ -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-badge mono">06 // DISPATCH CENTER</span>
-          <h2 class="section-title">Dispatch <span class="gold">Center</span></h2>
-          <p class="section-desc">Open a channel — all transmissions acknowledged within 24 hours.</p>
-        </div>
-
-        <div class="contact-grid">
-          <div class="terminal-panel reveal">
-            <div class="terminal-titlebar">
-              <span class="term-dot" style="background:#ff5f57"></span>
-              <span class="term-dot" style="background:#febc2e"></span>
-              <span class="term-dot" style="background:#28c840"></span>
-              <span class="mono label-xs text-dim" style="margin-left:auto;">precinct99.dispatch.terminal</span>
+        <div class="bento-content">
+          <div class="bento-header">
+            <span class="bento-tag mono">Web</span>
+            <span class="bento-badge">Completed</span>
+          </div>
+          <h3 class="bento-title">Body &amp; Care Works</h3>
+          <p class="bento-desc">E-commerce front-end for a wellness brand featuring a product catalog, shopping cart, and complete checkout flow.</p>
+          <div class="bento-footer">
+            <div class="bento-techs">
+              <span class="mono">PHP</span><span class="mono">MySQL</span>
             </div>
-            <div class="terminal-body">
-              <div class="t-line"><span class="t-prompt">$</span> <span class="gold">connect</span> --operative dhyey.desai</div>
-              <div class="t-line"><span class="t-prompt">></span> Connection established ✓</div>
-              <div class="t-line"><span class="t-prompt">></span> Available for assignment:</div>
-              <div class="t-line t-indent">— Full Stack Development</div>
-              <div class="t-line t-indent">— Java / Spring Boot Backend</div>
-              <div class="t-line t-indent">— React.js / Angular Frontend</div>
-              <div class="t-line t-indent">— Azure / Cloud Projects</div>
-              <div class="t-line t-indent">— AI-Assisted Systems</div>
-              <div class="t-line"><span class="t-prompt">></span> Preferred channels:</div>
-              <div class="t-line t-blink"><span class="t-prompt">$</span> <span id="term-typed"></span><span class="cursor">|</span></div>
-            </div>
-            <div class="channels">
-              <a href="mailto:dhyeydesai2103@gmail.com" class="channel-link">
-                <span class="mono label-xs text-dim">EMAIL</span>
-                <span>dhyeydesai2103@gmail.com</span>
-              </a>
-              <a href="https://www.linkedin.com/in/dhyeydesaii/" target="_blank" rel="noreferrer" class="channel-link">
-                <span class="mono label-xs text-dim">LINKEDIN</span>
-                <span>dhyeydesaii</span>
-              </a>
-              <a href="https://github.com/Dhyey1234" target="_blank" rel="noreferrer" class="channel-link">
-                <span class="mono label-xs text-dim">GITHUB</span>
-                <span>Dhyey1234</span>
-              </a>
-              <a href="tel:+15198016816" class="channel-link">
-                <span class="mono label-xs text-dim">DIRECT LINE</span>
-                <span>+1 (519) 801-6816</span>
-              </a>
+            <div class="bento-actions">
+              <a href="https://github.com/dhyey1234" target="_blank" rel="noopener" class="bento-btn-ghost">GitHub</a>
             </div>
           </div>
+        </div>
+      </article>
 
-          <form class="contact-form reveal" id="contact-form" novalidate>
-            <div class="form-head">
-              <span class="mono label-xs gold">INCIDENT REPORT — FORM R-99</span>
+      <!-- Row 2 Left: Bookstore App — landscape -->
+      <article class="bento-card bento-landscape reveal-up" style="--delay:140ms">
+        <div class="bento-img-wrap">
+          <img src="media/Bookstore.png" alt="Bookstore Application screenshot" loading="lazy" />
+          <div class="bento-img-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="bento-content">
+          <div class="bento-header">
+            <span class="bento-tag mono">Full Stack</span>
+            <span class="bento-badge">Completed</span>
+          </div>
+          <h3 class="bento-title">Bookstore App</h3>
+          <p class="bento-desc">Full-stack bookstore platform with user authentication, inventory management, order tracking, and an admin dashboard built on a RESTful API.</p>
+          <div class="bento-footer">
+            <div class="bento-techs">
+              <span class="mono">Node.js</span><span class="mono">PostgreSQL</span><span class="mono">React</span><span class="mono">REST API</span>
             </div>
-            <div class="form-group">
-              <label class="mono label-xs" for="cf-name">REPORTING PARTY</label>
-              <input type="text" id="cf-name" name="name" class="form-field" placeholder="Your full name..." autocomplete="name" required />
+            <div class="bento-actions">
+              <a href="https://github.com/dhyey1234" target="_blank" rel="noopener" class="bento-btn-ghost">GitHub</a>
+              <a href="#" class="bento-btn-accent">Live Demo &#8599;</a>
             </div>
-            <div class="form-group">
-              <label class="mono label-xs" for="cf-email">CONTACT FREQUENCY</label>
-              <input type="email" id="cf-email" name="email" class="form-field" placeholder="your@email.com" autocomplete="email" required />
+          </div>
+        </div>
+      </article>
+
+      <!-- Row 2 Right: Weather App — landscape -->
+      <article class="bento-card bento-landscape reveal-up" style="--delay:200ms">
+        <div class="bento-img-wrap">
+          <img src="media/weatherApp.png" alt="Weather App screenshot" loading="lazy" />
+          <div class="bento-img-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="bento-content">
+          <div class="bento-header">
+            <span class="bento-tag mono">Frontend</span>
+            <span class="bento-badge">Live</span>
+          </div>
+          <h3 class="bento-title">Weather App</h3>
+          <p class="bento-desc">Live weather dashboard consuming OpenWeather API with location search and animated weather conditions.</p>
+          <div class="bento-footer">
+            <div class="bento-techs">
+              <span class="mono">JavaScript</span><span class="mono">REST API</span>
             </div>
-            <div class="form-group">
-              <label class="mono label-xs" for="cf-subject">CASE SUBJECT</label>
-              <input type="text" id="cf-subject" name="subject" class="form-field" placeholder="Subject of inquiry..." />
+            <div class="bento-actions">
+              <a href="https://github.com/dhyey1234" target="_blank" rel="noopener" class="bento-btn-ghost">GitHub</a>
+              <a href="https://knowweather-ten.vercel.app" class="bento-btn-accent">Demo &#8599;</a>
             </div>
-            <div class="form-group">
-              <label class="mono label-xs" for="cf-msg">INCIDENT DESCRIPTION</label>
-              <textarea id="cf-msg" name="message" class="form-field form-textarea" rows="5" placeholder="Describe the situation in detail..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-gold btn-block">
-              Transmit Message
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-            </button>
-            <p class="mono label-xs text-dim" style="margin-top:.75rem;">// Transmissions acknowledged within 24 hours.</p>
-          </form>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-header reveal-up">
+      <div class="section-label mono">// 02 &#8212; skills</div>
+      <h2 class="section-title">Tech <span class="text-accent">Stack</span></h2>
+      <p class="section-sub">Technologies I use across the full development lifecycle &#8212; from frontend to cloud infrastructure.</p>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skills-category reveal-up">
+        <div class="category-label mono">Frontend</div>
+        <div class="skills-items">
+          <div class="skill-item"><i class="devicon-react-original colored" aria-hidden="true"></i><span>React</span></div>
+          <div class="skill-item"><i class="devicon-nextjs-plain" aria-hidden="true"></i><span>Next.js</span></div>
+          <div class="skill-item"><i class="devicon-typescript-plain colored" aria-hidden="true"></i><span>TypeScript</span></div>
+          <div class="skill-item"><i class="devicon-javascript-plain colored" aria-hidden="true"></i><span>JavaScript</span></div>
         </div>
       </div>
-    </section>
-  </main>
 
+      <div class="skills-category reveal-up" style="--delay:60ms">
+        <div class="category-label mono">Backend</div>
+        <div class="skills-items">
+          <div class="skill-item"><i class="devicon-java-plain colored" aria-hidden="true"></i><span>Java</span></div>
+          <div class="skill-item"><i class="devicon-spring-plain colored" aria-hidden="true"></i><span>Spring Boot</span></div>
+          <div class="skill-item"><i class="devicon-nodejs-plain colored" aria-hidden="true"></i><span>Node.js</span></div>
+          <div class="skill-item skill-item--svg">
+            <svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 9l-3 3 3 3M16 9l3 3-3 3M14 6l-4 12"/></svg>
+            <span>REST APIs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category reveal-up" style="--delay:120ms">
+        <div class="category-label mono">Mobile</div>
+        <div class="skills-items">
+          <div class="skill-item"><i class="devicon-android-plain colored" aria-hidden="true"></i><span>Android</span></div>
+          <div class="skill-item"><i class="devicon-react-original colored" aria-hidden="true"></i><span>React Native</span></div>
+        </div>
+      </div>
+
+      <div class="skills-category reveal-up" style="--delay:180ms">
+        <div class="category-label mono">Cloud</div>
+        <div class="skills-items">
+          <div class="skill-item"><i class="devicon-amazonwebservices-plain-wordmark colored" aria-hidden="true"></i><span>AWS</span></div>
+          <div class="skill-item"><i class="devicon-azure-plain colored" aria-hidden="true"></i><span>Azure</span></div>
+          <div class="skill-item"><i class="devicon-firebase-plain colored" aria-hidden="true"></i><span>Firebase</span></div>
+        </div>
+      </div>
+
+      <div class="skills-category reveal-up" style="--delay:240ms">
+        <div class="category-label mono">Database</div>
+        <div class="skills-items">
+          <div class="skill-item"><i class="devicon-postgresql-plain colored" aria-hidden="true"></i><span>PostgreSQL</span></div>
+          <div class="skill-item"><i class="devicon-mysql-plain colored" aria-hidden="true"></i><span>MySQL</span></div>
+          <div class="skill-item"><i class="devicon-mongodb-plain colored" aria-hidden="true"></i><span>MongoDB</span></div>
+        </div>
+      </div>
+
+      <div class="skills-category reveal-up" style="--delay:300ms">
+        <div class="category-label mono">Tools</div>
+        <div class="skills-items">
+          <div class="skill-item"><i class="devicon-docker-plain colored" aria-hidden="true"></i><span>Docker</span></div>
+          <div class="skill-item"><i class="devicon-git-plain colored" aria-hidden="true"></i><span>Git</span></div>
+          <div class="skill-item"><i class="devicon-github-original" aria-hidden="true"></i><span>GitHub</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="section-header reveal-up">
+      <div class="section-label mono">// 03 &#8212; credentials</div>
+      <h2 class="section-title">Certifi<span class="text-accent">cations</span></h2>
+      <p class="section-sub">Industry-recognized credentials validating my cloud and technical expertise.</p>
+    </div>
+    <div class="certs-grid">
+
+      <article class="cert-card reveal-up">
+        <div class="cert-img-wrap">
+          <img src="media/Aws Cloud Practioner Essntials.jpeg" alt="AWS Cloud Practitioner Essentials certificate" loading="lazy" />
+        </div>
+        <div class="cert-body">
+          <div class="cert-issuer mono">Amazon Web Services</div>
+          <h3 class="cert-title">AWS Cloud Practitioner Essentials</h3>
+          <p class="cert-desc">Foundational certification covering core AWS cloud concepts, global infrastructure, services, pricing models, and security best practices.</p>
+          <div class="cert-tags">
+            <span class="mono">Cloud Computing</span><span class="mono">AWS Services</span><span class="mono">Security</span>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-date mono">Issued 2024</span>
+            <a href="#" class="cert-verify mono">Verify &#8599;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cert-card reveal-up" style="--delay:100ms">
+        <div class="cert-img-wrap">
+          <img src="media/AZ104.jpeg" alt="Microsoft Azure AZ-104 certificate" loading="lazy" />
+        </div>
+        <div class="cert-body">
+          <div class="cert-issuer mono">Microsoft Azure</div>
+          <h3 class="cert-title">AZ-104 Azure Administrator</h3>
+          <p class="cert-desc">Validates expertise in managing Azure identities, governance, storage, compute resources, and virtual networking in enterprise environments.</p>
+          <div class="cert-tags">
+            <span class="mono">Azure Admin</span><span class="mono">Virtual Networks</span><span class="mono">Identity &amp; Access</span>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-date mono">Issued 2024</span>
+            <a href="#" class="cert-verify mono">Verify &#8599;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cert-card reveal-up" style="--delay:200ms">
+        <div class="cert-img-wrap">
+          <img src="media/Claude Code.jpeg" alt="Claude Code in Action certificate" loading="lazy" />
+        </div>
+        <div class="cert-body">
+          <div class="cert-issuer mono">Anthropic</div>
+          <h3 class="cert-title">Claude Code in Action</h3>
+          <p class="cert-desc">Hands-on certification covering AI-powered development with Claude, including API integration, prompt engineering, and building production AI applications.</p>
+          <div class="cert-tags">
+            <span class="mono">AI Integration</span><span class="mono">Prompt Engineering</span><span class="mono">Claude SDK</span>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-date mono">Issued 2025</span>
+            <a href="#" class="cert-verify mono">Verify &#8599;</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="contact-inner reveal-up">
+      <div class="contact-tag mono">// 04 &#8212; contact</div>
+      <h2 class="contact-heading">
+        Let's build something<br /><span class="text-accent">remarkable</span> together.
+      </h2>
+      <p class="contact-sub">Open to full-time roles, freelance projects, and interesting collaborations. I respond within 24 hours.</p>
+      <a href="mailto:dhyeydesai@example.com" class="btn-primary btn-large">Say hello &#8599;</a>
+      <div class="contact-links">
+        <a href="https://github.com/dhyey1234" target="_blank" rel="noopener" class="contact-social">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.138 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/dhyey-desai" target="_blank" rel="noopener" class="contact-social">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:dhyeydesai@example.com" class="contact-social">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <div class="nav-badge-icon"><span>99</span></div>
-          <div>
-            <strong>Dhyey Desai</strong>
-            <small class="mono text-dim">Precinct 99 // Full Stack Developer</small>
-          </div>
-        </div>
-        <p class="mono label-xs text-dim">© <span id="footer-year"></span> Dhyey Desai. All cases closed with integrity.</p>
-        <!-- Easter egg: Holt style -->
-        <p class="footer-holt mono label-xs text-dim" title="Statement. I am a developer who solves problems with code. That is all.">Statement.</p>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <a href="#home" class="footer-logo mono">Dhyey Desai</a>
+        <span class="footer-copy mono">&copy; 2026 Dhyey Desai. All rights reserved (I think).</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/dhyey1234" target="_blank" rel="noopener" class="footer-link mono">GitHub</a>
+        <a href="https://linkedin.com/in/dhyeydesaii" target="_blank" rel="noopener" class="footer-link mono">LinkedIn</a>
+        <a href="mailto:dhyeydesai2103@gmail.com" class="footer-link mono">Email</a>
       </div>
     </div>
   </footer>
